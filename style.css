@@ -1,0 +1,125 @@
+body{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.title{
+    align-self: center;
+    animation: rainbow 4s infinite linear;
+    font-size: 40px;
+}
+.divider{
+    align-self: center;
+    margin-bottom: 50px;
+    font-size: 70px;
+}
+
+.input-container{
+    align-self: center;
+}
+
+.row-input{
+    display: flex;
+    flex-direction: row;
+}
+
+.item{
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(204, 204, 204);
+    margin: 7px;
+    align-content: center;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.progress-bar{
+    align-self: center;
+    position: relative;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.loader {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    align-self: center;
+    visibility: hidden;
+}
+
+.img-congratulation{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    visibility: hidden;
+}
+ 
+
+
+/* animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes rainbow{
+    100%, 
+    0% {
+        color: rgb(255, 0, 0);;
+    }
+    8% {
+        color: rgb(255, 127, 0);
+    }
+    16% {
+        color: rgb(255, 255, 0);
+    }
+    25% {
+        color: rgb(127, 255, 0);
+    }
+    33% {
+        color: rgb(0, 255, 0);
+    }
+    41% {
+        color:  rgb(0, 255, 127);
+    }
+    50% {
+        color: rgb(0, 255, 255);
+    }
+    58% {
+        color: rgb(0, 127, 255);
+    }
+    66% {
+        color:  rgb(0, 0, 255);
+    }
+    75% {
+        color: rgb(127, 0, 255);
+    }
+    83% {
+        color: rgb(255, 0, 255);
+    }
+    91% {
+        color: rgb(255, 0, 127);
+    }
+}
+@keyframes highlightError {
+    100%,
+    0%{
+        border-color: #B82132;
+    }
+    30%{
+        border-color: #D2665A;
+    } 
+    60%{
+        border-color: #F2B28C;
+    }
+    90%{
+        border-color: #F6DED8;
+    }
+}
